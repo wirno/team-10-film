@@ -17,8 +17,8 @@ var gulp        = require('gulp'),
 var source = {
     path:       'src/',
     scripts:    'src/js/*.js',
-    sass:       'source/css/*.*',
-    images:     'source/img/*.{gif,jpg,png,svg}'
+    sass:       'src/sass/*.scss',
+    images:     'src/img/*.{gif,jpg,png,svg}'
 };
 
 var dist = {

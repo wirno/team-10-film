@@ -1,0 +1,28 @@
+/* ---------- Base imports ---------- */
+
+/* ---------- Vars ---------- */
+
+$size24: 24px;
+$size36: 36px;
+$font-color: #fff;
+$gris-1: #818181;
+$ls2: 2px;
+$ls1-4: 1.4px;
+
+/* ---------- Common styles ---------- */
+
+body{
+	color : $gris-1;
+	line-height: $ls1-4;
+	font-family: 'Gotham A', 'Gotham B', "Gotham", Helvetica Neue, Helvetica, Arial, Sans Serif;
+	background: #000;
+	margin: 0px;
+	padding: 0px;
+	border: 0;
+	font-size: 100%;
+	}
+
+/* ---------- Imports ---------- */
+
+@import "partial-em";
+@import "partial-ml";

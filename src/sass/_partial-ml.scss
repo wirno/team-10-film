@@ -1,0 +1,113 @@
+body{
+	.content{
+		section{
+			width:100%;
+			height:100%;
+			background:#000;
+			float:left;
+		}
+		#section-movie-header-poster{
+			#film-header-poster{
+				.image-container{
+				}
+				.row-rs-buttons{
+					background:#121212;
+					width:100%;
+					padding-top:20px;
+					padding-bottom: 20px;
+					display:inline-block;
+					.group-buttons-rs{
+						display: block;
+						margin-left: auto;
+						margin-right: auto;
+						width:960px;
+						.group-button-rs{
+							width:300px;
+    						line-height: 48px;
+    						background-color: #202020;
+    						margin-right:20px;
+    						a{
+    							color:#fff;
+    							font-size:24px;
+    							letter-spacing: 2px;
+    							a:visited, a:link{
+    								text-decoration:none;
+    								color:#fff;
+    							}
+    						}
+						}
+					}
+				}
+			}
+		}
+		#section-movie-embed-trailer{
+			#movie-embed-trailer{
+				.trailer-header{
+					margin-top: 30px;
+					.row{
+						background:#000;
+						.trailer-header-title{
+						    line-height: 48px;
+						    color:#fff;
+						    span{
+						    	font-size: 36px;
+						    }
+						}
+					}
+				}
+
+				.row-rs-buttons{
+					background:#000;
+					width:100%;
+					padding-top:20px;
+					padding-bottom: 20px;
+					display:inline-block;
+					.group-buttons-rs{
+						display: block;
+						margin-left: auto;
+						margin-right: auto;
+						width:960px;
+						.group-button-rs{
+							width:300px;
+    						line-height: 48px;
+    						background-color: #202020;
+    						margin-right:20px;
+    						a{
+    							color:#fff;
+    							font-size:24px;
+    							letter-spacing: 2px;
+    							a:visited, a:link{
+    								text-decoration:none;
+    								color:#fff;
+    							}
+    						}
+						}
+					}
+				}
+				.row-thumbnail-trailer{
+					.thumbnail-trailer{
+						img{
+							width:240px;
+							height:140px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+.clear{
+	clear:both;
+}
+
+.image-container img{
+	width:100%;
+	height: auto;
+}
+
+img{
+	border:0 !important;
+	padding:0px !important;
+}

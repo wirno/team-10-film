@@ -1,0 +1,714 @@
+<!doctype html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+      <title>Feetish | official site</title>
+      <link href="//cloud.typography.com/6283492/754624/css/fonts.css" rel="stylesheet">
+      <link href="vendor/jquery-ui.css" rel="stylesheet">
+      <link href="style/style.css" rel="stylesheet">
+      <style>
+         .dark-film-text-color
+         {
+         color: #222327 !important;
+         text-shadow: none !important;
+         }
+      </style>
+      <!--[if lt IE 9]>
+      <script src="http://www.foxmovies.com/libs/html5shiv/html5shiv.min.js"></script>
+      <![endif]-->
+      <style>
+         #front_film_page #content input:focus {
+         outline: 2px solid #E31D1A;
+         }
+         #film_details .open-film-tickets,
+         #front_film_page #content #rewards .btn span.right,
+         #front_film_page #content #rewards .btn span.left,
+         #front_film_page #content .btn span.right,
+         #front_film_page #content .btn span.left,
+         #featured_content li a.exit span.right
+         {
+         background-color: #E31D1A; /* layer fill content */
+         background: linear-gradient(to left, #E31D1A 50%, #F7312E 50% );
+         background-size: 200% 100%;
+         -webkit-transition: background-position 100ms ease;
+         -moz-transition: background-position 100ms ease;
+         transition: background-position 100ms ease;
+         background-position: right bottom;
+         }
+         #front_film_page #content #rewards .btn span.right,
+         #front_film_page #content #rewards .btn span.left,
+         #front_film_page #content .btn span.left,
+         #front_film_page #content .btn span.right,
+         #front_film_page h1 span,
+         #front_film_page h2 span,
+         #front_film_page h3 span,
+         #front_film_page h4 span,
+         #front_film_page h5 span,
+         #front_film_page h6 span,
+         #front_film_page .carousel-indicators li.active,
+         #front_film_page #posters #posters-wrap .pagination .swiper-pagination-switch.swiper-active-switch
+         {
+         background-color: #E31D1A;
+         border-color:#E31D1A;
+         }
+         #front_film_page #content .sign-up input
+         {
+         outline-color: #E31D1A;
+         }
+         #film_details .open-film-tickets:hover,
+         #front_film_page #content #rewards .btn:hover span.right,
+         #front_film_page #content #rewards .btn:hover span.left,
+         #front_film_page #content .btn:hover span.right,
+         #front_film_page #content .btn:hover span.left,
+         #front_film_page #content #film_header .buttons li:hover .btn span.right,
+         #front_film_page #content #film_header .buttons li:hover .btn span.left,
+         #featured_content li a.exit:hover span.right
+         {
+         background-position: left bottom;
+         }
+         #front_film_page #content #film_header .buttons li .btn span.left,
+         #front_film_page #content #rewards .btn span.left,
+         #front_film_page #content .btn span.left
+         {
+         -webkit-transition: background-position 100ms 100ms ease;
+         -moz-transition: background-position 100ms 100ms ease;
+         transition: background-position 100ms 100ms ease;
+         }
+         #front_film_page #content #film_header .buttons li .btn:hover span.right,
+         #front_film_page #content #rewards .btn:hover span.right,
+         #front_film_page #content .btn:hover span.right
+         {
+         -webkit-transition: background-position 100ms 100ms ease;
+         -moz-transition: background-position 100ms 100ms ease;
+         transition: background-position 100ms 100ms ease;
+         }
+         #featured_videos.large-player ul:not(.social-share) li .active .yt-image {
+         border: 4px solid #E31D1A;
+         }
+         #front_film_page #content .btn.sign-up-with-facebook-button span.right, #front_film_page #content .btn.sign-up-with-facebook-button span.left
+         {
+         background-color: #4274B1;
+         background: linear-gradient(to left, #4274B1 50%, #4F81BE 50%);
+         background-size: 200% 100%;
+         background-position: right bottom;
+         }
+         #front_film_page #content .btn.sign-up-with-facebook-button:hover span.right, #front_film_page #content .btn.sign-up-with-facebook-button:hover span.left
+         {
+         background-position: left bottom;
+         }
+         .more-movies .container.divide-3 .videos .col-1 span.right {
+         background-color: #E31D1A;
+         }
+      </style>
+      <link href="http://fast.fonts.net/cssapi/9dd54635-43eb-44a2-bc7e-f29ef6d00efe.css" rel="stylesheet">
+      <style>
+         #content h1,
+         #content h2,
+         #content h3,
+         #content h4,
+         #content h5,
+         #content h6 {
+         font-family: 'Helvetica Neue LT W01_73 Bd Ex';
+         }
+         #content h3 {
+         }
+      </style>
+      <style>
+         #content
+         {
+         font-family: 'Helvetica LT W01 Roman';
+         }
+      </style>
+      <link href="http://s3.foxmovies.com/foxmovies/dev/films/144/assets/style.css-6185205195.css" rel="stylesheet">
+   </head>
+   <body id="front_film_page">
+      <!-- Google Tag Manager -->
+      <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-KCFKVZ" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+      <script>
+         var dataLayer = [{'UACode':'UA-20019600-11'}];
+              
+      </script>
+      <script>
+         (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+         	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+         	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+         })(window,document,'script','dataLayer','GTM-KCFKVZ');
+      </script>
+      <!-- End Google Tag Manager -->
+      <div id="content">
+         <div class="blur">
+            <div id="section_container_film-header">
+               <section id="film_header">
+                  <div id="image_container">
+                     <img src="http://s3.foxmovies.com/foxmovies/production/films/132/images/feature/logan-film-header-front-main-stage.jpg" alt="Logan">
+                  </div>
+                  <div class="buttons">
+                     <ul class="center">
+                        <li>
+                           <a href="javascript:" class="btn open-trailer" data-trailer="RH3OxVFvTeg" data-film="http://www.foxmovies.com/movies/logan/trailer" data-is_copa="no"><span class="left">Watch the Trailer</span><span class="right"><span class="arrow"></span></span></a>
+                        </li>
+                        <!-- Facebook -->
+                        <li>
+                           <a href="//facebook.com/TheWolverineMovie" target="_blank" class="visit-fb btn exit"><span class="left alt"><i class="fa fa-facebook"></i>Visit Facebook</span><span class="right"><span class="arrow"></span></span></a>
+                        </li>
+                        <!-- Twitter -->
+                        <li>
+                           <a href="//twitter.com/wolverinemovie" target="_blank" class="visit-tw btn exit"><span class="left alt"><i class="fa fa-twitter"></i>Visit Twitter</span><span class="right"><span class="arrow"></span></span></a>
+                        </li>
+                     </ul>
+                  </div>
+               </section>
+            </div>
+            <div class="clear"></div>
+            <div id="section_container_featured-videos">
+               <script>
+                  is_video_swiper = false;
+                  is_lgvid_swiper = false;
+                  var featured_videos_section = true;
+               </script>
+               <style>
+               </style>
+               <div id="trailer"></div>
+               <section id="featured_videos" class="large-player film-page " >
+                  <div class="container divide-4">
+                     <div class="section-header col-4">
+                        <h3>Videos<span></span></h3>
+                        <div class="cta">
+                           More videos are just a click away. Subscribe on YouTube.
+                           <div class="g-ytsubscribe" data-channel="foxmovies" data-layout="default" data-count="default"></div>
+                        </div>
+                     </div>
+                     <div class="inline-player">
+                        <div class="yt-wrapper" id="load-first-video" data-trailer="RH3OxVFvTeg">
+                           <div id="yt_inline_player"></div>
+                        </div>
+                        <ul class="social-share">
+                           <li><a href="//www.facebook.com/sharer/sharer.php?u=https://www.youtube.com/watch?v=RH3OxVFvTeg" data-type="facebook" class="share-facebook"><span class="icon-social">Share</span></a></li>
+                           <li><a href="https://twitter.com/intent/tweet?text=https:%3A%2F%2Fyoutube.com/watch?v=RH3OxVFvTeg" data-type="twitter" class="share-tweet"><span class="icon-social">Tweet</span></a></li>
+                           <li><a href="https://plus.google.com/share?url=https://www.youtube.com/watch?v=RH3OxVFvTeg" data-type="google_plus" class="share-google"><span class="icon-social">Share</span></a></li>
+                        </ul>
+                     </div>
+                     <div id="videos-wrap" class="videos-3">
+                        <ul>
+                           <li class="col-1">
+                              <a href="javascript:" data-trailer="RH3OxVFvTeg" data-film="https://www.youtube.com/watch?v=RH3OxVFvTeg" data-age_restricted="no" class="launch-inline featured  load-this">
+                              <img src="http://www.foxmovies.com/images/youtube-play.png" class="yt-play" alt="youtube play button">
+                              <img src="https://i.ytimg.com/vi/RH3OxVFvTeg/mqdefault.jpg" alt="Logan | Trailer 2 [HD] | 20th Century FOX" class="yt-image">
+                              <span>Logan | Trailer 2 [HD] | 20th Century FOX</span>
+                              </a>
+                           </li>
+                           <li class="col-1">
+                              <a href="javascript:" data-trailer="Div0iP65aZo" data-film="https://www.youtube.com/watch?v=Div0iP65aZo" data-age_restricted="no" class="launch-inline featured ">
+                              <img src="http://www.foxmovies.com/images/youtube-play.png" class="yt-play" alt="youtube play button">
+                              <img src="https://i.ytimg.com/vi/Div0iP65aZo/mqdefault.jpg" alt="Logan | Official Trailer [HD] | 20th Century FOX" class="yt-image">
+                              <span>Logan | Official Trailer [HD] | 20th Century FOX</span>
+                              </a>
+                           </li>
+                           <li class="col-1">
+                              <a href="javascript:" data-trailer="fDnXUq2uV6c" data-film="https://www.youtube.com/watch?v=fDnXUq2uV6c" data-age_restricted="no" class="launch-inline featured ">
+                              <img src="http://www.foxmovies.com/images/youtube-play.png" class="yt-play" alt="youtube play button">
+                              <img src="https://i.ytimg.com/vi/fDnXUq2uV6c/mqdefault.jpg" alt="Logan | &quot;Grace&quot; #SB51 Commercial | 20th Century Fox" class="yt-image">
+                              <span>Logan | &quot;Grace&quot; #SB51 Commercial | 20th Century Fox</span>
+                              </a>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="more-btn">
+                        <a href="//www.youtube.com/playlist?list=PLfPBohF1uFwqqGLa9mkMp428K4xuOJGsX" target="_blank" class="btn exit"><span class="left">View More on YouTube</span><span class="right"><span class="arrow"></span></span></a>
+                     </div>
+                     <div class="clear"></div>
+                  </div>
+               </section>
+            </div>
+            <div class="clear"></div>
+            <div id="section_container_about">
+               <style>
+                  #front_film_page .blur.dark section#about,
+                  section#about		{
+                  background-image: url('http://s3.foxmovies.com/foxmovies/production/films/132/modules/about/background_image/background-image-front-8476926050.jpg');
+                  background-repeat: no-repeat;
+                  background-size: cover;
+                  background-color: #000000;
+                  }
+               </style>
+               <section id="about"
+                  class="cast-and-crew " style="background-image:url(http://s3.foxmovies.com/foxmovies/production/films/132/modules/about/background_image/background-image-front-8476926050.jpg);background-repeat: no-repeat;background-size: cover;">
+                  <div class="container">
+                     <div class="about-content">
+                        <div class="header">
+                           <h1>Logan</h1>
+                           <h2 id="release_date_heading">In Theaters March 3, 2017</h2>
+                           <div class="cta">
+                              <div class="share-film ">
+                                 <ul class="social-icons dark">
+                                    <!-- Twitter -->
+                                    <li>
+                                       <a href="//twitter.com/wolverinemovie" target="_blank" class="social-icon tw exit"><i
+                                          class="fa fa-twitter"></i></a>
+                                    </li>
+                                    <!-- Facebook -->
+                                    <li>
+                                       <a href="//facebook.com/TheWolverineMovie" target="_blank" class="social-icon fb exit"><i
+                                          class="fa fa-facebook"></i></a>
+                                    </li>
+                                    <!-- Instagram -->
+                                    <li>
+                                       <a href="//instagram.com/wponx" target="_blank" class="social-icon instagram exit"><i
+                                          class="fa fa-instagram"></i></a>
+                                    </li>
+                                    <!-- YouTube -->
+                                    <li>
+                                       <a href="//www.youtube.com/playlist?list=PLfPBohF1uFwqqGLa9mkMp428K4xuOJGsX" target="_blank" class="social-icon yt exit"><i
+                                          class="fa fa-youtube-play"></i></a>
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="stats container divide-2">
+                           <div class="col-1">
+                              <p class="synopsis">In the near future, a weary Logan cares for an ailing Professor X in a hide out on the Mexican border. But Logan&#039;s attempts to hide from the world and his legacy are up-ended when a young mutant arrives, being pursued by dark forces.</p>
+                              <div class="genres">
+                                 <h2>Genres</h2>
+                                 <p>
+                                    Action /                                  Adventure                              
+                                 </p>
+                              </div>
+                           </div>
+                           <div class="col-1">
+                              <div id="cast_and_actors_container">
+                                 <table class="cast-crew">
+                                    <tr>
+                                       <td class="tg-031e">
+                                          <h2>Directed by</h2>
+                                       </td>
+                                       <td class="tg-031e">James Mangold</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="tg-031e">
+                                          <h2>Screenplay by</h2>
+                                       </td>
+                                       <td class="tg-031e">Michael Green and Scott Frank &amp; James Mangold</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="tg-031e">
+                                          <h2>Story by</h2>
+                                       </td>
+                                       <td class="tg-031e">David James Kelly and James Mangold</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="tg-031e">
+                                          <h2>Produced by</h2>
+                                       </td>
+                                       <td class="tg-031e">Hutch Parker, p.g.a., Simon Kinberg, p.g.a., Lauren Shuler Donner</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="tg-031e">
+                                          <h2>Cast</h2>
+                                       </td>
+                                       <td class="tg-031e">Hugh Jackman, Patrick Stewart, Richard E. Grant, Boyd Holbrook, Stephen Merchant, Introducing Dafne </td>
+                                    </tr>
+                                 </table>
+                              </div>
+                              <a href="javascript:" id="show_more_actors" style="display:none">Show More</a>
+                           </div>
+                           <div class="cast-and-crew-bottom">
+                              <ul id="logos">
+                                 <li class="rating-wrapper custom-rating">
+                                    <div class="rating">
+                                       <img class="rating-img"
+                                          src="http://s3.foxmovies.com/foxmovies/production/films/132/images/rating/rating-film-page-2.png"
+                                          height="50%" width="auto" alt="Film Rating">
+                                       <div class="rating-reasons">For rating reasons, go to <a href="http://www.mpaa.org/" target="_blank">mpaa.org</a>, <a href="http://www.filmratings.com/" target="_blank">filmratings.com</a></div>
+                                    </div>
+                                 </li>
+                                 <li>
+                                    <img src="http://www.foxmovies.com/images/20th-century-fox-logo.jpg" width="50px" alt="20th Century Fox logo">
+                                 </li>
+                                 <li><img src="http://s3.foxmovies.com/foxmovies/production/films/132/images/logos/210-front.png" width="auto" alt="logo"></li>
+                                 <li><img src="http://s3.foxmovies.com/foxmovies/production/films/132/images/logos/209-front.png" width="auto" alt="logo"></li>
+                                 <li><img src="http://s3.foxmovies.com/foxmovies/production/films/132/images/logos/211-front.png" width="auto" alt="logo"></li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </section>
+            </div>
+            <div class="clear"></div>
+            <div id="section_container_posters">
+               <script>
+                  is_poster_swiper = false;
+                  
+               </script>
+               <style>
+               </style>
+               <section id="posters" class="full-width " >
+                  <div class="container swiper-container">
+                     <h3>Posters<span></span></h3>
+                     <div id="posters-wrap" class="no-swipe posters-2">
+                        <!-- Slider Items -->
+                        <div class="swiper-wrapper">
+                           <ul class="swiper-slide">
+                              <li class="item">
+                                 <a href="http://s3.foxmovies.com/foxmovies/production/films/132/images/posters/519-film-page-large.jpg"
+                                    data-fancybox-group="gallery"
+                                    data-download="http://www.foxmovies.com/movies/logan/download-poster/519"
+                                    data-share-text="Check%20out%20the%20poster%20for%20Logan%20"
+                                    data-share="http://www.foxmovies.com/movies/logan/posters/519/logan-one-sheet-new" class="fancybox">
+                                 <img src="http://s3.foxmovies.com/foxmovies/production/films/132/images/posters/519-film-page-large.jpg">
+                                 <span></span>
+                                 </a>
+                              </li>
+                              <li class="item">
+                                 <a href="http://s3.foxmovies.com/foxmovies/production/films/132/images/posters/509-film-page-large.jpg"
+                                    data-fancybox-group="gallery"
+                                    data-download="http://www.foxmovies.com/movies/logan/download-poster/509"
+                                    data-share-text="Check%20out%20the%20poster%20for%20Logan%20"
+                                    data-share="http://www.foxmovies.com/movies/logan/posters/509/logan-one-sheet" class="fancybox">
+                                 <img src="http://s3.foxmovies.com/foxmovies/production/films/132/images/posters/509-film-page-large.jpg">
+                                 <span></span>
+                                 </a>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+               </section>
+            </div>
+            <div class="clear"></div>
+            <div id="section_container_sign-up">
+               <style>
+                  #front_film_page .blur.dark section#sign_up,
+                  section#sign_up		{
+                  background-image: url('http://s3.foxmovies.com/foxmovies/production/films/132/modules/sign_up/background_image/background-image-front-4676926366.jpg');
+                  background-repeat: no-repeat;
+                  background-size: cover;
+                  background-color: #000000;
+                  }
+               </style>
+               <section id="sign_up" class="sign-up " style="background-image:url(http://s3.foxmovies.com/foxmovies/production/films/132/modules/sign_up/background_image/background-image-front-4676926366.jpg);background-repeat: no-repeat;background-size: cover;"">
+                  <div class="sign-up-text">
+                     <div class="container divide-2">
+                        <div class="col-1 no-background">
+                           <h3 class="sign-up-txt">Straight from the source. Direct to your newsfeed.<span></span></h3>
+                           <h4>Be the first to get exclusive updates.</h4>
+                        </div>
+                        <div class="col-1 no-background">
+                           <!-- This action is for U.S. ONLY -->
+                           <form action="https://foxus.rsys2.net/pub/rf" method="POST" id="film-bottom-form">
+                              <div class="form-text">
+                                 <p class="sign-up-label">
+                                    Yes! Send me email updates and offers from Fox! I&nbsp;can opt out at any time. By&nbsp;signing up below, I&nbsp;agree to the Fox <a href="http://www.foxmovies.com/privacy-policy">Privacy Policy</a> and <a href="http://www.foxmovies.com/terms-and-conditions">Terms of&nbsp;Use</a>.
+                                 </p>
+                                 <div class="sign-up-with-email">
+                                    <label for="sign_up_email" class="sign-up-via-email-label">Sign up via email</label>
+                                    <!-- This _ID_ is for the U.S. ONLY -->
+                                    <input type="hidden" name="_ri_" value="X0Gzc2X%3DWQpglLjHJlTQGrGIIwUiGBcnIh2lDhzdrcv9L6nVwjpnpgHlpgneHmgJoXX0Gzc2X%3DWQpglLjHJlTQGsrzaNizbJPtIaBRuRK0riwSDtDO">
+                                    <!-- You MUST update the REG_SOURCE -->
+                                    <input type="hidden" name="REG_SOURCE" value="FOXMOVIES_LOGAN_SIGNUP">
+                                    <input name="EMAIL_ADDRESS_" class="txt" type="email" placeholder="Email" required>
+                                    <input type="hidden" name="NEWSLETTER_MOVIES" value="1">
+                                    <button type="submit" class="btn"><span class="left">Sign Up</span><span class="right"><span class="arrow"></span></span></button>
+                                 </div>
+                                 <span class="sign-up-with-facebook-text" style="margin-bottom:5px">Or sign up with your Facebook&nbsp;account</span>
+                                 <button type="button" class="btn no-left-margin sign-up-with-facebook-button fbsignup" name="fbsignup">
+                                 <span class="left"><span></span></span>
+                                 <span class="right">Sign Up with Facebook</span>
+                                 </button>
+                              </div>
+                           </form>
+                        </div>
+                     </div>
+                  </div>
+               </section>
+            </div>
+            <div class="clear"></div>
+            <div id="section_container_social-updates">
+               <style>
+               </style>
+               <section id="social" class="light" >
+                  <div class="container divide-4">
+                     <div class="section-header col-4">
+                        <h3>Social Updates<span></span></h3>
+                        <span class="cta">
+                        Stay connected with Logan for more updates.
+                        </span>
+                     </div>
+                     <div class="social-container">
+                        <div class="social-updates-container">
+                           <div class="social-updates">
+                              <ul id="social_posts" class="social-posts clearfix">
+                                 <li class="social-post col-1">
+                                    <a href="https://www.facebook.com/TheWolverineMovie/videos/1599399450075911/" target="_blank" class="exit"><img src="https://graph.facebook.com/1599399450075911/picture" alt=""></a>
+                                    <div class="content">
+                                       <!-- Avatar -->
+                                       <div class="profile-img-wrap">
+                                          <a href="http://facebook.com/267047309977805" target="_blank" class="exit"><img src="http://graph.facebook.com/TheWolverineMovie/picture?type=normal" alt=""></a>
+                                       </div>
+                                       <div class="meta">
+                                          <!-- Account Name -->
+                                          <a href="http://facebook.com/267047309977805" target="_blank" class="exit">
+                                          Logan									</a>
+                                          <!-- Published -->
+                                          <span class="time">02/05/2017 4:14pm</span>
+                                          <span class="twitter network"></span>
+                                       </div>
+                                       <span class="comment">
+                                       Grace.							</span>
+                                    </div>
+                                 </li>
+                                 <li class="social-post col-1">
+                                    <a href="https://t.co/sKJ4EfAJUo" target="_blank" class="exit"><img src="http://pbs.twimg.com/media/C3HTbWOVUAAeJp_.jpg" alt=""></a>
+                                    <div class="content">
+                                       <!-- Avatar -->
+                                       <div class="profile-img-wrap">
+                                          <a href="http://twitter.com/WolverineMovie" target="_blank" class="exit"><img src="http://pbs.twimg.com/profile_images/822129560267280384/6s0Imame_bigger.jpg" alt=""></a>
+                                       </div>
+                                       <div class="meta">
+                                          <!-- Account Name -->
+                                          <a href="http://twitter.com/WolverineMovie" target="_blank" class="exit">
+                                          @Logan									</a>
+                                          <!-- Published -->
+                                          <span class="time">01/26/2017 9:40am</span>
+                                          <span class="twitter network"></span>
+                                       </div>
+                                       <span class="comment">
+                                       Final Logan poster. 3.3.17 <a href="https://t.co/sKJ4EfAJUo" target="_blank" class="exit">https://t.co/sKJ4EfAJUo</a>							</span>
+                                    </div>
+                                 </li>
+                                 <li class="social-post col-1">
+                                    <a href="https://www.facebook.com/TheWolverineMovie/photos/a.518092601539940.134721.267047309977805/1585861014763088/?type=3" target="_blank" class="exit"><img src="https://graph.facebook.com/1585861014763088/picture?type=normal" alt=""></a>
+                                    <div class="content">
+                                       <!-- Avatar -->
+                                       <div class="profile-img-wrap">
+                                          <a href="http://facebook.com/267047309977805" target="_blank" class="exit"><img src="http://graph.facebook.com/TheWolverineMovie/picture?type=normal" alt=""></a>
+                                       </div>
+                                       <div class="meta">
+                                          <!-- Account Name -->
+                                          <a href="http://facebook.com/267047309977805" target="_blank" class="exit">
+                                          Logan									</a>
+                                          <!-- Published -->
+                                          <span class="time">01/26/2017 9:40am</span>
+                                          <span class="twitter network"></span>
+                                       </div>
+                                       <span class="comment">
+                                       Final Logan poster. 3.3.17							</span>
+                                    </div>
+                                 </li>
+                                 <li class="social-post col-1">
+                                    <a href="https://www.facebook.com/TheWolverineMovie/photos/a.499056300110237.129328.267047309977805/1576201032395753/?type=3" target="_blank" class="exit"><img src="https://graph.facebook.com/1576201032395753/picture?type=normal" alt=""></a>
+                                    <div class="content">
+                                       <!-- Avatar -->
+                                       <div class="profile-img-wrap">
+                                          <a href="http://facebook.com/267047309977805" target="_blank" class="exit"><img src="http://graph.facebook.com/TheWolverineMovie/picture?type=normal" alt=""></a>
+                                       </div>
+                                       <div class="meta">
+                                          <!-- Account Name -->
+                                          <a href="http://facebook.com/267047309977805" target="_blank" class="exit">
+                                          Logan									</a>
+                                          <!-- Published -->
+                                          <span class="time">01/19/2017 9:15am</span>
+                                          <span class="twitter network"></span>
+                                       </div>
+                                       <span class="comment">
+                                       Logan updated their profile picture.							</span>
+                                    </div>
+                                 </li>
+                                 <li class="social-post col-1">
+                                    <a href="https://www.facebook.com/TheWolverineMovie/videos/1576012875747902/" target="_blank" class="exit"><img src="https://graph.facebook.com/1576012875747902/picture" alt=""></a>
+                                    <div class="content">
+                                       <!-- Avatar -->
+                                       <div class="profile-img-wrap">
+                                          <a href="http://facebook.com/267047309977805" target="_blank" class="exit"><img src="http://graph.facebook.com/TheWolverineMovie/picture?type=normal" alt=""></a>
+                                       </div>
+                                       <div class="meta">
+                                          <!-- Account Name -->
+                                          <a href="http://facebook.com/267047309977805" target="_blank" class="exit">
+                                          Logan									</a>
+                                          <!-- Published -->
+                                          <span class="time">01/19/2017 6:00am</span>
+                                          <span class="twitter network"></span>
+                                       </div>
+                                       <span class="comment">
+                                       Watch the final trailer for #Logan. 3.3.17							</span>
+                                    </div>
+                                 </li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                     <div id="social_buttons_container">
+                        <a href="https://www.facebook.com/TheWolverineMovie?ref=br_tf" target="_blank" class="btn exit"><span class="left">View More on Facebook</span><span class="right"><span class="arrow"></span></span></a>
+                        <a href="https://www.twitter.com/wolverinemovie?ref=br_tf" target="_blank" class="btn exit"><span class="left">View More on Twitter</span><span class="right"><span class="arrow"></span></span></a>
+                     </div>
+                     <div class="clear"></div>
+                  </div>
+               </section>
+            </div>
+            <div class="clear"></div>
+         </div>
+         <!-- Trailer -->
+         <section id="trailer_modal">
+            <div class="modal-close">
+               <div class="modal">
+                  <a href="javascript:" class="close-x trailer-x"></a>
+                  <div id="ytplayer"></div>
+                  <ul class="social-share">
+                     <li><a href="javascript:" data-type="facebook" class="share-facebook"><span class="icon-social">Share</span></a></li>
+                     <li><a href="javascript:" data-type="twitter" class="share-tweet"><span class="icon-social">Tweet</span></a></li>
+                     <li><a href="javascript:" data-type="google_plus" class="share-google"><span class="icon-social">Share</span></a></li>
+                  </ul>
+               </div>
+            </div>
+         </section>
+         <!-- Tickets -->
+         <section id="tickets-sm">
+            <div class="modal-close">
+               <div class="modal">
+                  <a href="javascript:" class="close-x"></a>
+                  <h3>Get Tickets For</h3>
+                  <h2>Logan</h2>
+                  <h3 id="zip-id"><span id="user-zip"></span></h3>
+                  <h6>Select Provider</h6>
+                  <ul class="ticket-providers">
+                     <li><a href="javascript:" class="ticket-fandango exit" data-provider="fandango" target="_blank" onclick="dataLayer.push({'retailerName': 'Fandango','movieName': 'Logan', 'event': 'ticketing'})">Fandango</a></li>
+                     <li><a href="javascript:" class="ticket-movietickets exit" data-provider="movietickets" target="_blank" onclick="dataLayer.push({'retailerName': 'MovieTickets', 'movieName': 'Logan', 'event': 'ticketing'})">Movie Tickets</a></li>
+                  </ul>
+               </div>
+            </div>
+         </section>
+      </div>
+      <footer id="footer" class="blur">
+         <div id="footer_links" class="container divide-6">
+            <ul class="footer-nav col-1">
+               <li><a href="http://www.foxmovies.com/about">About</a></li>
+               <li><a href="http://www.foxmovies.com/press">News &amp; Press</a></li>
+               <li><a href="http://www.foxmovies.com/movies">Movies</a></li>
+               <li><a href="http://www.foxmovies.com/fox-favorites">Fox Favorites</a></li>
+               <li><a href="http://www.foxconnect.com/" target="_blank" class="exit">Home Entertainment</a></li>
+               <li><a href="http://www.foxmovies.com/sitemap">Sitemap</a></li>
+            </ul>
+            <ul class="footer-nav col-1">
+               <li><a href="http://www.foxsearchlight.com/" target="_blank" class="exit">Searchlight</a></li>
+               <li><a href="http://www.foxcareers.com/" target="_blank" class="exit">Fox Careers</a></li>
+               <li><a href="https://www.youtube.com/user/FoxFamilyEnt" target="_blank" class="exit">Fox Family</a></li>
+               <li><a href="http://www.foxinternational.com/" target="_blank" class="exit">International</a></li>
+               <li><a href="http://Epk.tv" target="_blank" class="exit">Press Materials</a></li>
+               <li><a href="http://www.foxconnect.com/" target="_blank" class="exit">Store</a></li>
+            </ul>
+            <div id="terms" class="col-3">
+               &trade; and &copy; 2017 Twentieth Century Fox Film Corporation. All rights reserved. Property of Fox. Use of this website (including any and all parts and components) constitutes your acceptance of these <a href="http://www.foxmovies.com/terms-and-conditions">Terms and Conditions</a> and <a href="http://www.foxmovies.com/privacy-policy">Privacy Policy</a>. <a href="http://www.foxmovies.com/ad-choices">Ad Choices</a>. The materials on this website are not to be sold, traded or given away. Any copying, manipulation, publishing, or other transfer of these materials, except as specifically provided in the terms and conditions of use, is strictly prohibited. <a href="http://www.foxmovies.com/smoking-policy">Smoking Policy</a>											
+            </div>
+         </div>
+      </footer>
+      <script>
+         var current_controller='front';var current_action='film';var current_page='front/film';var BASE_URL='http://www.foxmovies.com';var DEBUG=false;var copa_age_gate_type='';var initially_show_age_gate=false;var initially_show_age_gate_warning=false;var copa_age_gate_film_url='';var updates_images=["http:\/\/www.foxmovies.com\/images\/updates\/assasins.png","http:\/\/www.foxmovies.com\/images\/updates\/deadpool.png","http:\/\/www.foxmovies.com\/images\/updates\/jennifer.png","http:\/\/www.foxmovies.com\/images\/updates\/the-martian.png","http:\/\/www.foxmovies.com\/images\/updates\/x-men-angel.png","http:\/\/www.foxmovies.com\/images\/updates\/x-men.png","http:\/\/www.foxmovies.com\/images\/updates\/xavier.png"];var facebook_app_id=1437422416525408;var responsys_ri='X0Gzc2X%3DWQpglLjHJlTQGrGIIwUiGBcnIh2lDhzdrcv9L6nVwjpnpgHlpgneHmgJoXX0Gzc2X%3DWQpglLjHJlTQGsrzaNizbJPtIaBRuRK0riwSDtDO';var film_release_date='2017-03-03';var film_release_date_number=20170303;var film_slug='logan';var loop_feature_video=false;var isCopa=false;var copa_videos='';var preview_mode=false;var transition_color='#FFFFFF';var film_id=132;var csrf_token='IDbPXyuraeEPgxaEadJMRHJt37sSshtgkAGDD1tH';	
+      </script>
+      <script src="http://www.foxmovies.com/libs/jquery/jquery.min.js"></script>
+      <script src="http://www.foxmovies.com/build/front.min.js"></script>
+      <script src="http://www.foxmovies.com/build/js/front/film.js"></script>
+      <script type="application/ld+json">
+         {
+         	"@context": "http://schema.org",
+         	
+         						"@type": "Movie",
+         											"name": "Logan",
+         											"image": "http://s3.foxmovies.com/foxmovies/production/films/132/images/feature/home-page-feature-thumbnail-image-front-featured-films-slider-3.jpg",
+         											"description": "In the near future, a weary Logan cares for an ailing Professor X in a hide out on the Mexican border. But Logan&#039;s attempts to hide from the world and his legacy are up-ended when a young mutant arrives, being pursued by dark forces.",
+         											"productionCompany": {"name":"20th Century Fox","url":"http://www.foxmovies.com/movies/logan","sameAs":["//twitter.com/wolverinemovie","//facebook.com/TheWolverineMovie"]},
+         											"datePublished": "2017-03-03",
+         											"trailer": {"@type":"VideoObject","embedURL":"https://www.youtube.com/watch?v=RH3OxVFvTeg","name":"Logan Trailer","thumbnail":"https://i.ytimg.com/vi/RH3OxVFvTeg/mqdefault.jpg"},
+         											"actor": [],
+         											"character": [],
+         											"author": [{"@type":"Person","name":"Michael Green and Scott Frank & James Mangold"}],
+         											"producer": [{"@type":"Person","name":"Hutch Parker, p.g.a., Simon Kinberg, p.g.a., Lauren Shuler Donner"}],
+         											"genre": ["Action","Adventure"]
+         									}
+      </script>
+      <script src="http://s3.foxmovies.com/foxmovies/dev/films/144/assets/script.js-2884794629.js"></script>		
+      <!-- Twitter -->
+      <script type="text/javascript">//<![CDATA[
+         (function()
+         {
+         	var twitter_script_tag = document.createElement('script');
+         	twitter_script_tag.type = 'text/javascript';
+         	twitter_script_tag.async = true;
+         	twitter_script_tag.src = '//platform.twitter.com/widgets.js';
+         	var s = document.getElementsByTagName('script')[0];
+         	s.parentNode.insertBefore(twitter_script_tag, s);
+         })();
+         //]]>
+      </script>
+      <!-- Facebook -->
+      <script>
+         // SHOW SOCIAL LIKE/SHARE IN HEADER
+         $(function()
+         {
+         	$('#header, #footer').find('.social-icons > li').hover(function()
+         	{
+         		$(this).addClass('open');//.children('.share-links').show();
+         	}, function()
+         	{
+         		$(this).removeClass('open');//.children('.share-links').hide();
+         	});
+         
+         });
+      </script>
+      <!-- Google+ -->
+      <script>
+         (function(w, d, s)
+         {
+         	function go()
+         	{
+         		// Google
+         		var po = document.createElement('script');
+         		po.type = 'text/javascript';
+         		po.async = true;
+         		po.src = '//apis.google.com/js/platform.js';
+         
+         		var s = document.getElementsByTagName('script')[0];
+         		s.parentNode.insertBefore(po, s);
+         
+         		// Facebook
+         		po = document.createElement('script');
+         		po.async = true;
+         		po.src = '//connect.facebook.net/en_US/all.js';
+         		po.onload = function()
+         		{
+         			window.fbAsyncInit = function()
+         			{
+         				FB.init(
+         					{
+         						appId : '1437422416525408',
+         						status : true,
+         						cookie : true,
+         						xfbml : true
+         					});
+         
+         				// Setup facebook signup for foxmovies and films
+         												foxSignup.facebookSignup("#header-form button.fbsignup",facebook_app_id);
+         					foxSignup.facebookSignup("#home-top-form button.fbsignup",facebook_app_id);
+         					foxSignup.facebookSignup("#home-bottom-form button.fbsignup",facebook_app_id);
+         					foxSignup.facebookSignup("#film-top-form button.fbsignup",facebook_app_id);
+         					foxSignup.facebookSignup("#film-bottom-form button.fbsignup",facebook_app_id);
+         										};
+         		};
+         
+         		s.parentNode.insertBefore(po, s);
+         	}
+         
+         	if ( w.addEventListener )
+         	{
+         		w.addEventListener('load', go, false);
+         	}
+         	else if ( w.attachEvent )
+         	{
+         		w.attachEvent('onload', go);
+         	}
+         })(window, document, 'script');
+      </script>
+      <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"21de4c302c","applicationID":"33387953","transactionName":"M1xaMRdXWhdTU0NYXgoWeQYRX1sKHXZFXl8QelcLEURbCF5VRXFXDVVV","queueTime":0,"applicationTime":834,"atts":"HxtZR19NSRk=","errorBeacon":"bam.nr-data.net","agent":""}</script>
+   </body>
+</html>

@@ -1,0 +1,93 @@
+/* ---------- Base imports ---------- */
+/* ---------- Vars ---------- */
+/* ---------- Common styles ---------- */
+body {
+  color: #818181;
+  line-height: 1.4px;
+  font-family: 'Gotham A', 'Gotham B', "Gotham", Helvetica Neue, Helvetica, Arial, Sans Serif;
+  background: #000;
+  margin: 0px;
+  padding: 0px;
+  border: 0;
+  font-size: 100%; }
+
+/* ---------- Imports ---------- */
+/* fichier pour elhadad si tu en a besoin */
+body .content section {
+  width: 100%;
+  height: 100%;
+  background: #000;
+  float: left; }
+
+body .content #section-movie-header-poster #film-header-poster .row-rs-buttons {
+  background: #121212;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: inline-block; }
+  body .content #section-movie-header-poster #film-header-poster .row-rs-buttons .group-buttons-rs {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 960px; }
+    body .content #section-movie-header-poster #film-header-poster .row-rs-buttons .group-buttons-rs .group-button-rs {
+      width: 300px;
+      line-height: 48px;
+      background-color: #202020;
+      margin-right: 20px; }
+      body .content #section-movie-header-poster #film-header-poster .row-rs-buttons .group-buttons-rs .group-button-rs a {
+        color: #fff;
+        font-size: 24px;
+        letter-spacing: 2px; }
+        body .content #section-movie-header-poster #film-header-poster .row-rs-buttons .group-buttons-rs .group-button-rs a a:visited, body .content #section-movie-header-poster #film-header-poster .row-rs-buttons .group-buttons-rs .group-button-rs a a:link {
+          text-decoration: none;
+          color: #fff; }
+
+body .content #section-movie-embed-trailer #movie-embed-trailer .trailer-header {
+  margin-top: 30px; }
+  body .content #section-movie-embed-trailer #movie-embed-trailer .trailer-header .row {
+    background: #000; }
+    body .content #section-movie-embed-trailer #movie-embed-trailer .trailer-header .row .trailer-header-title {
+      line-height: 48px;
+      color: #fff; }
+      body .content #section-movie-embed-trailer #movie-embed-trailer .trailer-header .row .trailer-header-title span {
+        font-size: 36px; }
+
+body .content #section-movie-embed-trailer #movie-embed-trailer .row-rs-buttons {
+  background: #000;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: inline-block; }
+  body .content #section-movie-embed-trailer #movie-embed-trailer .row-rs-buttons .group-buttons-rs {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 960px; }
+    body .content #section-movie-embed-trailer #movie-embed-trailer .row-rs-buttons .group-buttons-rs .group-button-rs {
+      width: 300px;
+      line-height: 48px;
+      background-color: #202020;
+      margin-right: 20px; }
+      body .content #section-movie-embed-trailer #movie-embed-trailer .row-rs-buttons .group-buttons-rs .group-button-rs a {
+        color: #fff;
+        font-size: 24px;
+        letter-spacing: 2px; }
+        body .content #section-movie-embed-trailer #movie-embed-trailer .row-rs-buttons .group-buttons-rs .group-button-rs a a:visited, body .content #section-movie-embed-trailer #movie-embed-trailer .row-rs-buttons .group-buttons-rs .group-button-rs a a:link {
+          text-decoration: none;
+          color: #fff; }
+
+body .content #section-movie-embed-trailer #movie-embed-trailer .row-thumbnail-trailer .thumbnail-trailer img {
+  width: 240px;
+  height: 140px; }
+
+.clear {
+  clear: both; }
+
+.image-container img {
+  width: 100%;
+  height: auto; }
+
+img {
+  border: 0 !important;
+  padding: 0px !important; }

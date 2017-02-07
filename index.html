@@ -7,13 +7,86 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="dist/styles/style.css">
-    <link rel="stylesheet" href="dist/styles/fullpage.min.css">
+    <link rel="stylesheet" href="vendor/bootstrap-3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="dist/css/style.css">
   </head>
   <body>
+    <div class="content">
+
+      <div id="section-movie-header-poster">
+        <section id="film-header-poster">
+          <div class="image-container">
+            <img src="dist/img/temporary.jpg">
+          </div>
+          <div class="row-rs-buttons">
+            <div class="btn-group btn-group-justify group-buttons-rs" role="group">
+              <div class="btn-group group-button-rs" role="group">
+                <a href="#" class="btn" role="button">Watch trailer</a>
+              </div>
+              <div class="btn-group group-button-rs" role="group">
+                <a href="#" class="btn rs-button" role="button">Visit Facebook</a>
+              </div>
+              <div class="btn-group group-button-rs" role="group">
+                <a href="#" class="btn rs-button" role="button">Watch twitter</a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div id="section-movie-embed-trailer">
+        <section id="movie-embed-trailer">
+          <div class="container trailer-header">
+            <div class="row">
+              <div class="col-lg-2 col-md-2 trailer-header-title">
+                <span>Movie</span>
+              </div>
+            </div>
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="//www.youtube.com/embed/ePbKGoIGAXY"></iframe>
+                  </div>
+                </div>
+              </div>
+          </div>
+
+          <div class="row-rs-buttons">
+            <div class="btn-group btn-group-justify group-buttons-rs" role="group">
+              <div class="btn-group group-button-rs" role="group">
+                <a href="#" class="btn" role="button">Share</a>
+              </div>
+              <div class="btn-group group-button-rs" role="group">
+                <a href="#" class="btn rs-button" role="button">Tweet</a>
+              </div>
+              <div class="btn-group group-button-rs" role="group">
+                <a href="#" class="btn rs-button" role="button">Share</a>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="row-thumbnail-trailer">
+            <div class="text-center thumbnail-trailer">
+              <img src="dist/img/temporary.jpg"  height="236" width="240" class="img-thumbnail" alt="feetish">
+              <img src="dist/img/temporary.jpg"  height="236" width="240" class="img-thumbnail" alt="feetish">
+              <img src="dist/img/temporary.jpg"  height="236" width="240" class="img-thumbnail" alt="feetish">
+            </div>
+          </div>
+
+
+
+        </section>
+      </div>
+
+
+    </div>
+
 
 
   
-    <script src="dist/scripts/vendors.js"></script>
-    <script src="dist/scripts/app.js"></script>
+    <script src="vendor/jquery/jquery-3.1.1.min.js"></script>
+    <script src="vendor/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+    <script src="dist/js/main.js"></script>
+
   </body>
