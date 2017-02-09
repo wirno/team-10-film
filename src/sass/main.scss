@@ -8,21 +8,90 @@ $font-color: #fff;
 $gris-1: #818181;
 $ls2: 2px;
 $ls1-4: 1.4px;
+$avenir-light : 'Avenir Light';
 
 /* ---------- Common styles ---------- */
 
 body{
 	color : $gris-1;
-	line-height: $ls1-4;
-	font-family: 'Gotham A', 'Gotham B', "Gotham", Helvetica Neue, Helvetica, Arial, Sans Serif;
-	background: #000;
+	font-family: 'Gotham A', 'Gotham B', "Gotham", Helvetica Neue, Helvetica, Arial, Sans Serif;	background: #000;
 	margin: 0px;
 	padding: 0px;
 	border: 0;
 	font-size: 100%;
 	}
 
+p, a, span, h1, h2, h3{
+	font-family: 'Gotham A', 'Gotham B', "Gotham", Helvetica Neue, Helvetica, Arial, Sans Serif;
+}
+#gallery {
+	padding: 0px 0px 0px 0px;
+	position:relative;
+	background-size:cover;
+}
+
+#owl-gallery {
+	margin-top: 40px;
+}
+
+.section-wrapper {
+	position:relative;
+}
+
+#owl-gallery .item img{
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+#owl-gallery .owl-controls {
+	margin-bottom: 80px;
+}
+
+#owl-gallery .owl-controls .owl-page span {
+	display: block;
+	width: 9px;
+	height: 9px;
+	margin: 5px 6px;
+	border-radius: 6px;
+	opacity: 1;
+	background: #ccc;
+}
+
+#owl-gallery .owl-controls .owl-page.active span {
+	background: #fb0000;
+}
+
+#owl-gallery .owl-controls .owl-prev,
+#owl-gallery .owl-controls .owl-next {
+	margin-top: -40px;
+	color: #fb0000;
+	background: none;
+	opacity: 100;
+}
+
+#owl-gallery .owl-controls .owl-prev:before,
+#owl-gallery .owl-controls .owl-next:before {
+	color: #fff;
+	-webkit-transition: all .2s ease;
+	-moz-transition: all .2s ease;
+	-ms-transition: all .2s ease;
+	-o-transition: all .2s ease;
+	transition: all .2s ease;
+}
+
+#owl-gallery .owl-controls .owl-prev:hover:before,
+#owl-gallery .owl-controls .owl-next:hover:before {
+	color: #fb0000;
+}
+
+#owl-gallery .owl-buttons {
+	max-width: 1140px;
+	margin: 0 auto;
+}
+
+
+
 /* ---------- Imports ---------- */
 
-@import "partial-em";
-@import "partial-ml";
+@import "partial";

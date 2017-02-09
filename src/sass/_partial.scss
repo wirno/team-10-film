@@ -1,0 +1,252 @@
+body{
+	.content{
+		section{
+			width:100%;
+			height:100%;
+			background:#000;
+			float:left;
+		}
+		#section-movie-header-poster{
+			#film-header-poster{
+				.image-container{
+				}
+				.row-rs-buttons{
+					background:#121212;
+					width:100%;
+					padding-top:20px;
+					padding-bottom: 20px;
+					display:inline-block;
+					.group-buttons-rs{
+						display: block;
+						margin-left: auto;
+						margin-right: auto;
+						width:960px;
+						.group-button-rs{
+							width:300px;
+    						background-color: #202020;
+    						margin-right:20px;
+    						a{
+    							color:#cecece;
+    							font-size:16px;
+    							text-transform: uppercase;
+    							font-weight: bold;
+    							letter-spacing: 2px;
+    							a:visited, a:link{
+    								text-decoration:none;
+    								color:#cecece;
+    							}
+    						}
+						}
+					}
+				}
+			}
+		}
+		#section-movie-embed-trailer{
+			#movie-embed-trailer{
+				.trailer-header{
+					margin-top: 60px;
+					margin-bottom:30px;
+					.row{
+						background:#000;
+						.trailer-header-title{
+							margin-bottom:20px;
+						    color:#cecece;
+						    span{
+						    	font-size: 36px;
+						    }
+						}
+					}
+				}
+
+				.row-rs-buttons{
+					background:#000;
+					width:100%;
+					padding-top:20px;
+					padding-bottom: 20px;
+					display:inline-block;
+					.group-buttons-rs{
+						display: block;
+						margin-left: auto;
+						margin-right: auto;
+						width:960px;
+						.group-button-rs{
+							width:300px;
+    						line-height: 48px;
+    						background-color: #202020;
+    						margin-right:20px;
+    						a{
+    							color:#cecece;
+    							font-size:16px;
+    							text-transform: uppercase;
+    							font-weight: bold;
+    							letter-spacing: 2px;
+    							a:visited, a:link{
+    								text-decoration:none;
+    								color:#cecece;
+    							}
+    						}
+						}
+					}
+				}
+			}
+		}
+
+
+		#section-informations-movie{
+			#informations-movie{
+				margin-top:60px;
+				margin-bottom: 40px;
+				.informations{
+					width:100%;
+					padding-left: 100px;
+					padding-top:10px;
+					padding-bottom:30px;
+					background-color:#121212;
+					color:#cecece;
+
+					.title{
+						font-size: 36px;
+						margin-bottom: 10px !important;
+					}
+					.release-date{
+						font-size: 24px;
+						span{
+							font-size: 24px !important;
+						}
+					}
+
+					.synopsis{
+						line-height: 30px;
+						color:#818181;
+						font-size: 12px;
+					}
+
+					.comp-informations{
+						height:48px;
+						p{
+							font-size: 14px;
+							margin-top:2px;
+							color:#818181;
+							span{
+								font-size: 24px;
+								color:#cecece;
+							}
+						}
+					}
+					.comp-informations-text{
+						top:5px;
+					}
+				}
+			}
+		}
+
+		.section-gallery{
+			#gallery{
+				margin-top:30px;
+				margin-bottom: 30px;
+				.section-title{
+					color:#cecece;
+					font-size: 36px;
+					margin-bottom: 10px;
+				}
+			}
+		}
+
+		#section-poster-movie{
+			#poster-movie{
+				margin-top:30px;
+				margin-bottom: 30px;
+				.poster{
+					.section-title{
+						color:#cecece;
+						font-size: 36px;
+						margin-bottom: 20px;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+.clear{
+	clear:both;
+}
+
+.image-container img{
+	width:100%;
+	height: auto;
+}
+
+img{
+	border:0 !important;
+	padding:0px !important;
+}
+
+
+.img-carrousel{
+	width:240px;
+	height:140px;
+	margin-right:15px;
+}
+
+.owl-controls{
+	display:none !important;
+
+}
+
+
+#lightbox .modal-content {
+    display: inline-block;
+    text-align: center;   
+}
+
+#lightbox .close {
+    opacity: 1;
+    color: rgb(255, 255, 255);
+    background-color: rgb(25, 25, 25);
+    padding: 5px 8px;
+    position: absolute;
+    top: -15px;
+    right: -55px;
+   
+    z-index:100;
+}
+
+.thumbnail{
+	background: transparent;
+	border:none;
+}
+
+
+.info-basic{
+	position: absolute; 
+    top: 200px; 
+    left: 0; 
+    width: 100%;
+    .title-movie{
+    	font-size: 86px;
+    	text-transform: uppercase;
+    	color:#ff6fbe;
+    }
+    .item{
+    		line-height: 56px;
+    		font-size: 36px;
+    		color:#bebebe;
+    	} 
+}
+
+
+
+.button-movie{
+	display:block;
+	width:276px;
+	margin:auto;
+}
+
+i{
+	display: inline;
+	color: #e31d1a;
+	margin-right:5px;
+	font-size: 24px !important;
+}

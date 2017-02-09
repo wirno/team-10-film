@@ -3,7 +3,6 @@
 /* ---------- Common styles ---------- */
 body {
   color: #818181;
-  line-height: 1.4px;
   font-family: 'Gotham A', 'Gotham B', "Gotham", Helvetica Neue, Helvetica, Arial, Sans Serif;
   background: #000;
   margin: 0px;
@@ -11,8 +10,65 @@ body {
   border: 0;
   font-size: 100%; }
 
+p, a, span, h1, h2, h3 {
+  font-family: 'Gotham A', 'Gotham B', "Gotham", Helvetica Neue, Helvetica, Arial, Sans Serif; }
+
+#gallery {
+  padding: 0px 0px 0px 0px;
+  position: relative;
+  background-size: cover; }
+
+#owl-gallery {
+  margin-top: 40px; }
+
+.section-wrapper {
+  position: relative; }
+
+#owl-gallery .item img {
+  display: block;
+  width: 100%;
+  height: auto; }
+
+#owl-gallery .owl-controls {
+  margin-bottom: 80px; }
+
+#owl-gallery .owl-controls .owl-page span {
+  display: block;
+  width: 9px;
+  height: 9px;
+  margin: 5px 6px;
+  border-radius: 6px;
+  opacity: 1;
+  background: #ccc; }
+
+#owl-gallery .owl-controls .owl-page.active span {
+  background: #fb0000; }
+
+#owl-gallery .owl-controls .owl-prev,
+#owl-gallery .owl-controls .owl-next {
+  margin-top: -40px;
+  color: #fb0000;
+  background: none;
+  opacity: 100; }
+
+#owl-gallery .owl-controls .owl-prev:before,
+#owl-gallery .owl-controls .owl-next:before {
+  color: #fff;
+  -webkit-transition: all .2s ease;
+  -moz-transition: all .2s ease;
+  -ms-transition: all .2s ease;
+  -o-transition: all .2s ease;
+  transition: all .2s ease; }
+
+#owl-gallery .owl-controls .owl-prev:hover:before,
+#owl-gallery .owl-controls .owl-next:hover:before {
+  color: #fb0000; }
+
+#owl-gallery .owl-buttons {
+  max-width: 1140px;
+  margin: 0 auto; }
+
 /* ---------- Imports ---------- */
-/* fichier pour elhadad si tu en a besoin */
 body .content section {
   width: 100%;
   height: 100%;
@@ -32,24 +88,26 @@ body .content #section-movie-header-poster #film-header-poster .row-rs-buttons {
     width: 960px; }
     body .content #section-movie-header-poster #film-header-poster .row-rs-buttons .group-buttons-rs .group-button-rs {
       width: 300px;
-      line-height: 48px;
       background-color: #202020;
       margin-right: 20px; }
       body .content #section-movie-header-poster #film-header-poster .row-rs-buttons .group-buttons-rs .group-button-rs a {
-        color: #fff;
-        font-size: 24px;
+        color: #cecece;
+        font-size: 16px;
+        text-transform: uppercase;
+        font-weight: bold;
         letter-spacing: 2px; }
         body .content #section-movie-header-poster #film-header-poster .row-rs-buttons .group-buttons-rs .group-button-rs a a:visited, body .content #section-movie-header-poster #film-header-poster .row-rs-buttons .group-buttons-rs .group-button-rs a a:link {
           text-decoration: none;
-          color: #fff; }
+          color: #cecece; }
 
 body .content #section-movie-embed-trailer #movie-embed-trailer .trailer-header {
-  margin-top: 30px; }
+  margin-top: 60px;
+  margin-bottom: 30px; }
   body .content #section-movie-embed-trailer #movie-embed-trailer .trailer-header .row {
     background: #000; }
     body .content #section-movie-embed-trailer #movie-embed-trailer .trailer-header .row .trailer-header-title {
-      line-height: 48px;
-      color: #fff; }
+      margin-bottom: 20px;
+      color: #cecece; }
       body .content #section-movie-embed-trailer #movie-embed-trailer .trailer-header .row .trailer-header-title span {
         font-size: 36px; }
 
@@ -70,16 +128,63 @@ body .content #section-movie-embed-trailer #movie-embed-trailer .row-rs-buttons 
       background-color: #202020;
       margin-right: 20px; }
       body .content #section-movie-embed-trailer #movie-embed-trailer .row-rs-buttons .group-buttons-rs .group-button-rs a {
-        color: #fff;
-        font-size: 24px;
+        color: #cecece;
+        font-size: 16px;
+        text-transform: uppercase;
+        font-weight: bold;
         letter-spacing: 2px; }
         body .content #section-movie-embed-trailer #movie-embed-trailer .row-rs-buttons .group-buttons-rs .group-button-rs a a:visited, body .content #section-movie-embed-trailer #movie-embed-trailer .row-rs-buttons .group-buttons-rs .group-button-rs a a:link {
           text-decoration: none;
-          color: #fff; }
+          color: #cecece; }
 
-body .content #section-movie-embed-trailer #movie-embed-trailer .row-thumbnail-trailer .thumbnail-trailer img {
-  width: 240px;
-  height: 140px; }
+body .content #section-informations-movie #informations-movie {
+  margin-top: 60px;
+  margin-bottom: 40px; }
+  body .content #section-informations-movie #informations-movie .informations {
+    width: 100%;
+    padding-left: 100px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    background-color: #121212;
+    color: #cecece; }
+    body .content #section-informations-movie #informations-movie .informations .title {
+      font-size: 36px;
+      margin-bottom: 10px !important; }
+    body .content #section-informations-movie #informations-movie .informations .release-date {
+      font-size: 24px; }
+      body .content #section-informations-movie #informations-movie .informations .release-date span {
+        font-size: 24px !important; }
+    body .content #section-informations-movie #informations-movie .informations .synopsis {
+      line-height: 30px;
+      color: #818181;
+      font-size: 12px; }
+    body .content #section-informations-movie #informations-movie .informations .comp-informations {
+      height: 48px; }
+      body .content #section-informations-movie #informations-movie .informations .comp-informations p {
+        font-size: 14px;
+        margin-top: 2px;
+        color: #818181; }
+        body .content #section-informations-movie #informations-movie .informations .comp-informations p span {
+          font-size: 24px;
+          color: #cecece; }
+    body .content #section-informations-movie #informations-movie .informations .comp-informations-text {
+      top: 5px; }
+
+body .content .section-gallery #gallery {
+  margin-top: 30px;
+  margin-bottom: 30px; }
+  body .content .section-gallery #gallery .section-title {
+    color: #cecece;
+    font-size: 36px;
+    margin-bottom: 10px; }
+
+body .content #section-poster-movie #poster-movie {
+  margin-top: 30px;
+  margin-bottom: 30px; }
+  body .content #section-poster-movie #poster-movie .poster .section-title {
+    color: #cecece;
+    font-size: 36px;
+    margin-bottom: 20px; }
 
 .clear {
   clear: both; }
@@ -91,3 +196,54 @@ body .content #section-movie-embed-trailer #movie-embed-trailer .row-thumbnail-t
 img {
   border: 0 !important;
   padding: 0px !important; }
+
+.img-carrousel {
+  width: 240px;
+  height: 140px;
+  margin-right: 15px; }
+
+.owl-controls {
+  display: none !important; }
+
+#lightbox .modal-content {
+  display: inline-block;
+  text-align: center; }
+
+#lightbox .close {
+  opacity: 1;
+  color: white;
+  background-color: #191919;
+  padding: 5px 8px;
+  position: absolute;
+  top: -15px;
+  right: -55px;
+  z-index: 100; }
+
+.thumbnail {
+  background: transparent;
+  border: none; }
+
+.info-basic {
+  position: absolute;
+  top: 200px;
+  left: 0;
+  width: 100%; }
+  .info-basic .title-movie {
+    font-size: 86px;
+    text-transform: uppercase;
+    color: #ff6fbe; }
+  .info-basic .item {
+    line-height: 56px;
+    font-size: 36px;
+    color: #bebebe; }
+
+.button-movie {
+  display: block;
+  width: 276px;
+  margin: auto; }
+
+i {
+  display: inline;
+  color: #e31d1a;
+  margin-right: 5px;
+  font-size: 24px !important; }
