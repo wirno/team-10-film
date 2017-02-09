@@ -162,13 +162,12 @@ body .content #section-informations-movie #informations-movie {
       height: 48px; }
       body .content #section-informations-movie #informations-movie .informations .comp-informations p {
         font-size: 14px;
-        margin-top: 2px;
         color: #818181; }
         body .content #section-informations-movie #informations-movie .informations .comp-informations p span {
           font-size: 24px;
           color: #cecece; }
     body .content #section-informations-movie #informations-movie .informations .comp-informations-text {
-      top: 5px; }
+      padding-top: 10px; }
 
 body .content .section-gallery #gallery {
   margin-top: 30px;
