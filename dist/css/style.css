@@ -1,4 +1,47 @@
 /* ---------- Base imports ---------- */
+@font-face {
+  font-family: 'Avenir Light';
+  src: url("assets/fonts/Avenir-Light.eot");
+  /* IE9 Compat Modes */
+  src: url("assets/fonts/Avenir-Light.eot?#iefix") format("embedded-opentype"), url("assets/fonts/Avenir-Light.woff") format("woff"), url("assets/fonts/Avenir-Light.ttf") format("truetype");
+  /* Safari, Android, iOS */
+  font-style: normal;
+  font-weight: 200; }
+
+@font-face {
+  font-family: 'Avenir-LightOblique';
+  src: url("assets/fonts/Avenir-LightOblique.eot");
+  /* IE9 Compat Modes */
+  src: url("assets/fonts/Avenir-LightOblique.eot?#iefix") format("embedded-opentype"), url("assets/fonts/Avenir-LightOblique.woff") format("woff"), url("assets/fonts/Avenir-LightOblique.ttf") format("truetype");
+  /* Safari, Android, iOS */
+  font-style: oblique;
+  font-weight: 200; }
+
+@font-face {
+  font-family: 'Avenir Book';
+  src: url("assets/fonts/Avenir-Book.eot");
+  /* IE9 Compat Modes */
+  src: url("assets/fonts/Avenir-Book.eot?#iefix") format("embedded-opentype"), url("assets/fonts/Avenir-Book.woff") format("woff"), url("assets/fonts/Avenir-Book.ttf") format("truetype"), url("assets/fonts/Avenir-Book.svg#589202c858e9ee116eab4a8685515b5e") format("svg");
+  /* Legacy iOS */
+  font-style: normal;
+  font-weight: 400; }
+
+@font-face {
+  font-family: 'Avenir Book';
+  src: url("assets/fonts/Avenir-Book.eot");
+  /* IE9 Compat Modes */
+  src: url("assets/fonts/Avenir-Book.eot?#iefix") format("embedded-opentype"), url("assets/fonts/Avenir-Book.woff") format("woff"), url("assets/fonts/Avenir-Book.ttf") format("truetype"), url("assets/fonts/Avenir-Book.svg#589202c858e9ee116eab4a8685515b5e") format("svg");
+  /* Legacy iOS */
+  font-style: normal;
+  font-weight: 400; }
+
+@font-face {
+  font-family: 'journalregular';
+  src: url("../../assets/fonts/journal-webfont.eot");
+  src: url("../../assets/fonts/journal-webfont.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/journal-webfont.woff") format("woff"), url("../../assets/fonts/journal-webfont.ttf") format("truetype"), url("../../assets/fonts/journal-webfont.svg#journalregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
 /* ---------- Vars ---------- */
 /* ---------- Common styles ---------- */
 body {
@@ -10,13 +53,21 @@ body {
   border: 0;
   font-size: 100%; }
 
-p, a, span, h1, h2, h3 {
-  font-family: 'Gotham A', 'Gotham B', "Gotham", Helvetica Neue, Helvetica, Arial, Sans Serif; }
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.6) url(../img/overlay-pat.png); }
 
 #gallery {
-  padding: 0px 0px 0px 0px;
+  padding: 240px 0px 0px 0px;
   position: relative;
-  background-size: cover; }
+  background: url(../img/gallery-bg.jpg) center center no-repeat;
+  background-size: cover;
+  border-bottom: 2px solid #fb0000; }
 
 #owl-gallery {
   margin-top: 40px; }
@@ -68,12 +119,86 @@ p, a, span, h1, h2, h3 {
   max-width: 1140px;
   margin: 0 auto; }
 
+.owl-controls .owl-prev,
+.owl-controls .owl-next {
+  color: #FFF;
+  font-size: 0;
+  text-indent: -9999px;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  font-size: 12px;
+  border-radius: 50px;
+  background: none;
+  opacity: 1;
+  position: relative;
+  float: left;
+  overflow: hidden;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out; }
+
+.owl-controls .owl-next {
+  float: right; }
+
+@media screen and (max-width: 1370px) {
+  .owl-controls .owl-next {
+    float: right;
+    margin-right: 0px; }
+  .owl-controls .owl-prev {
+    float: left;
+    margin-left: 0px; } }
+
+.owl-controls .owl-prev:hover:before,
+.owl-controls .owl-next:hover:before {
+  color: #fb0000;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out; }
+
+.owl-controls .owl-prev:before, .owl-controls .owl-next:before {
+  content: "\f104";
+  font-family: FontAwesome;
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  font-size: 27px;
+  text-align: center;
+  text-indent: 0;
+  line-height: 50px; }
+
+.owl-controls .owl-next:before {
+  content: "\f105"; }
+
+.owl-controls .owl-page span {
+  display: block;
+  width: 9px;
+  height: 9px;
+  margin: 5px 6px;
+  border-radius: 6px;
+  opacity: 1;
+  background: #ccc; }
+
+.owl-controls .owl-page.active span {
+  background: #fb0000; }
+
 /* ---------- Imports ---------- */
 body .content section {
   width: 100%;
   height: 100%;
   background: #000;
   float: left; }
+
+body .content #section-movie-header-poster #film-header-poster .image-container {
+  width: 100%;
+  height: 630px;
+  overflow: hidden; }
 
 body .content #section-movie-header-poster #film-header-poster .row-rs-buttons {
   background: #121212;
@@ -87,7 +212,7 @@ body .content #section-movie-header-poster #film-header-poster .row-rs-buttons {
     margin-right: auto;
     width: 960px; }
     body .content #section-movie-header-poster #film-header-poster .row-rs-buttons .group-buttons-rs .group-button-rs {
-      width: 300px;
+      width: 31%;
       background-color: #202020;
       margin-right: 20px; }
       body .content #section-movie-header-poster #film-header-poster .row-rs-buttons .group-buttons-rs .group-button-rs a {
@@ -114,7 +239,6 @@ body .content #section-movie-embed-trailer #movie-embed-trailer .trailer-header 
 body .content #section-movie-embed-trailer #movie-embed-trailer .row-rs-buttons {
   background: #000;
   width: 100%;
-  padding-top: 20px;
   padding-bottom: 20px;
   display: inline-block; }
   body .content #section-movie-embed-trailer #movie-embed-trailer .row-rs-buttons .group-buttons-rs {
@@ -123,7 +247,7 @@ body .content #section-movie-embed-trailer #movie-embed-trailer .row-rs-buttons 
     margin-right: auto;
     width: 960px; }
     body .content #section-movie-embed-trailer #movie-embed-trailer .row-rs-buttons .group-buttons-rs .group-button-rs {
-      width: 300px;
+      width: 31%;
       line-height: 48px;
       background-color: #202020;
       margin-right: 20px; }
@@ -139,10 +263,9 @@ body .content #section-movie-embed-trailer #movie-embed-trailer .row-rs-buttons 
 
 body .content #section-informations-movie #informations-movie {
   margin-top: 60px;
-  margin-bottom: 40px; }
+  margin-bottom: 40px;
+  background-color: #121212; }
   body .content #section-informations-movie #informations-movie .informations {
-    width: 100%;
-    padding-left: 100px;
     padding-top: 10px;
     padding-bottom: 30px;
     background-color: #121212;
@@ -201,9 +324,6 @@ img {
   height: 140px;
   margin-right: 15px; }
 
-.owl-controls {
-  display: none !important; }
-
 #lightbox .modal-content {
   display: inline-block;
   text-align: center; }
@@ -224,7 +344,7 @@ img {
 
 .info-basic {
   position: absolute;
-  top: 200px;
+  top: 250px;
   left: 0;
   width: 100%; }
   .info-basic .title-movie {
@@ -234,7 +354,8 @@ img {
   .info-basic .item {
     line-height: 56px;
     font-size: 36px;
-    color: #bebebe; }
+    color: #bebebe;
+    font-family: 'journalregular'; }
 
 .button-movie {
   display: block;

@@ -45,3 +45,13 @@
     		$lightbox.find('.close').removeClass('hidden');
     	});
     });
+
+
+$(document).ready(function() {
+  $('#launch-trailer').on('click', function(ev) {
+ 
+    $("#trailer-video")[0].src += "&autoplay=1";
+    ev.preventDefault();
+ 
+  });
+});

@@ -1,4 +1,5 @@
 /* ---------- Base imports ---------- */
+@import "fonts";
 
 /* ---------- Vars ---------- */
 
@@ -9,6 +10,7 @@ $gris-1: #818181;
 $ls2: 2px;
 $ls1-4: 1.4px;
 $avenir-light : 'Avenir Light';
+$journal : 'journalregular';
 
 /* ---------- Common styles ---------- */
 
@@ -21,13 +23,23 @@ body{
 	font-size: 100%;
 	}
 
-p, a, span, h1, h2, h3{
-	font-family: 'Gotham A', 'Gotham B', "Gotham", Helvetica Neue, Helvetica, Arial, Sans Serif;
+.overlay {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+
+	background: rgba(0,0,0,0.6) url(../img/overlay-pat.png);
+		
 }
 #gallery {
-	padding: 0px 0px 0px 0px;
+	padding: 240px 0px 0px 0px;
 	position:relative;
+	background: url(../img/gallery-bg.jpg) center center no-repeat;
 	background-size:cover;
+	border-bottom: 2px solid #fb0000;
 }
 
 #owl-gallery {
@@ -90,6 +102,85 @@ p, a, span, h1, h2, h3{
 	margin: 0 auto;
 }
 
+.owl-controls .owl-prev,
+.owl-controls .owl-next {
+	color: #FFF;
+	font-size: 0;
+	text-indent: -9999px;
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	font-size: 12px;
+	border-radius: 50px;
+	background: none;
+	opacity: 1;
+	position: relative;
+	float: left;
+	overflow:hidden;
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+}
+
+.owl-controls .owl-next {
+	float: right;
+}
+
+@media screen and (max-width: 1370px) {
+	.owl-controls .owl-next {
+		float: right;
+		margin-right: 0px;
+	}
+	
+	.owl-controls .owl-prev {
+		float: left;
+		margin-left: 0px;
+	}
+}
+
+.owl-controls .owl-prev:hover:before,
+.owl-controls .owl-next:hover:before {
+	color: #fb0000;
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+}
+
+.owl-controls .owl-prev:before,.owl-controls .owl-next:before {
+	content: "\f104";
+	font-family: FontAwesome;
+	color: #fff;
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	font-size: 27px;
+	text-align: center;
+	text-indent: 0;
+	line-height: 50px;
+}
+
+.owl-controls .owl-next:before {
+	content: "\f105";
+}
+
+.owl-controls .owl-page span {
+	display: block;
+	width: 9px;
+	height: 9px;
+	margin: 5px 6px;
+	border-radius: 6px;
+	opacity: 1;
+	background: #ccc;
+}
+
+.owl-controls .owl-page.active span {
+	background: #fb0000;
+}
 
 
 /* ---------- Imports ---------- */

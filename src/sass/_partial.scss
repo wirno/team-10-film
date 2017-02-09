@@ -9,6 +9,9 @@ body{
 		#section-movie-header-poster{
 			#film-header-poster{
 				.image-container{
+				width:100%;
+				height:630px;
+				overflow:hidden;
 				}
 				.row-rs-buttons{
 					background:#121212;
@@ -22,7 +25,7 @@ body{
 						margin-right: auto;
 						width:960px;
 						.group-button-rs{
-							width:300px;
+							width:31%;
     						background-color: #202020;
     						margin-right:20px;
     						a{
@@ -61,7 +64,6 @@ body{
 				.row-rs-buttons{
 					background:#000;
 					width:100%;
-					padding-top:20px;
 					padding-bottom: 20px;
 					display:inline-block;
 					.group-buttons-rs{
@@ -70,7 +72,7 @@ body{
 						margin-right: auto;
 						width:960px;
 						.group-button-rs{
-							width:300px;
+							width:31%;
     						line-height: 48px;
     						background-color: #202020;
     						margin-right:20px;
@@ -96,9 +98,8 @@ body{
 			#informations-movie{
 				margin-top:60px;
 				margin-bottom: 40px;
+				background-color: #121212;
 				.informations{
-					width:100%;
-					padding-left: 100px;
 					padding-top:10px;
 					padding-bottom:30px;
 					background-color:#121212;
@@ -189,12 +190,6 @@ img{
 	margin-right:15px;
 }
 
-.owl-controls{
-	display:none !important;
-
-}
-
-
 #lightbox .modal-content {
     display: inline-block;
     text-align: center;   
@@ -220,7 +215,7 @@ img{
 
 .info-basic{
 	position: absolute; 
-    top: 200px; 
+    top: 250px; 
     left: 0; 
     width: 100%;
     .title-movie{
@@ -232,6 +227,7 @@ img{
     		line-height: 56px;
     		font-size: 36px;
     		color:#bebebe;
+    		font-family: 'journalregular';
     	} 
 }
 
@@ -303,7 +299,7 @@ i{
     .social-buttons li {
 		width: 100%;
     }
-	
+
 	.social-buttons li .fa {
 		font-size: 62px;
 	}
