@@ -248,5 +248,71 @@ i{
 	display: inline;
 	color: #e31d1a;
 	margin-right:5px;
-	font-size: 24px !important;
+	font-size: 24px;
+}
+
+
+
+#footer {
+	padding: 70px 0px 0px 0px;
+	/*  background: url(../img/contact-bg.jpg) center center no-repeat;  */
+	background-color: #121212;
+	background-size: cover;
+	position:relative;
+}
+
+
+/* Socials buttons */
+
+.social-buttons li {
+	text-align: center;
+	padding: 0px 20px;
+	width: 31.7%;
+	list-style: none;
+	float:left;
+	margin: 30px 0px;
+}
+
+.social-buttons a {
+	color: #fff !important;
+}
+
+.social-buttons li span {
+	-webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+	display:inline-block;
+	padding-top: 25px;
+	padding-bottom: 7px;
+	border-bottom: 1px solid rgba(0,0,0,0);
+}
+
+.social-buttons li:hover span {
+	margin-top: -6px;
+	margin-bottom: 6px;
+	color: #fb0000;
+	border-bottom: 1px solid #fff;
+}
+
+.social-buttons li .fa {
+	display: inline-block;
+	width: 100%;
+	font-size: 48px !important;
+}
+
+@media(max-width:767px) {
+    .social-buttons li {
+		width: 100%;
+    }
+	
+	.social-buttons li .fa {
+		font-size: 62px;
+	}
+}
+
+
+.copyright {
+	position:relative;
+	padding: 30px 0px;
+	line-height: 24px;
 }
