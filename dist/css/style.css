@@ -417,3 +417,39 @@ i {
   position: relative;
   padding: 30px 0px;
   line-height: 24px; }
+
+.mobile {
+  display: none; }
+
+@media (max-width: 767px) {
+  .row-rs-buttons {
+    width: 30%; }
+  .group-button-rs {
+    width: 10% !important; }
+  .button-movie {
+    width: 10%;
+    font-size: 8px !important;
+    text-transform: initial;
+    margin: 0;
+    letter-spacing: 0.7px; }
+  .title-movie {
+    font-size: 56px !important; }
+  .item {
+    font-size: 26px !important; }
+  .info-basic {
+    top: 0px !important;
+    left: 0px !important; }
+  .image-container {
+    height: inherit !important; }
+  .comp-informations-title {
+    line-height: 16px; }
+    .comp-informations-title .title {
+      display: none !important; }
+  .comp-informations-title {
+    height: 0px !important;
+    width: 0px !important; }
+  .genre {
+    display: initial !important; }
+  .mobile {
+    display: initial !important;
+    color: #fff !important; } }
