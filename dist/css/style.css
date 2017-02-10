@@ -452,4 +452,6 @@ i {
     display: initial !important; }
   .mobile {
     display: initial !important;
-    color: #fff !important; } }
+    color: #fff !important; }
+  .comp-informations {
+    height: inherit !important; } }
